@@ -14,11 +14,12 @@ export class AppComponent implements OnInit {
   form: FormGroup = new FormGroup({
     description : new FormControl('', [Validators.required, Validators.minLength(4)] )
   })
+  title: any;
 
   constructor(
     private service: TodoService
   ){}
-
+// conmit
   ngOnInit(){
     this.listarTodos()
   }
