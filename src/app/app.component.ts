@@ -19,7 +19,6 @@ export class AppComponent implements OnInit {
   constructor(
     private service: TodoService
   ){}
-// conmit
   ngOnInit(){
     this.listarTodos()
   }
