@@ -1,6 +1,7 @@
 const express = require('express')
 const { resolve } = require('path')
 const app = express()
+const path = require('path');
 
 app.use('/',
   express.static(
@@ -17,3 +18,8 @@ app
 
     console.log('Tudo funcionando certinho')
   })
+
+
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+  });
