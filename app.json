@@ -1,0 +1,8 @@
+{
+  "name": "lista-tasks",
+  "description": "A barebones Node.js app using Express 4",
+  "repository": "https://github.com/SUUSENJU/todolist.github.io",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/main/public/node.svg",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}
