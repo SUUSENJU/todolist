@@ -8,4 +8,4 @@ app.get('/*', function (req, res) {
   res.sendFile(__dirname + '/dist/' + projectName + '/index.html');
 });
 
-app.listen('https://lista-tasks.herokuapp.com/');
+app.listen(process.env.PORT || 4200)
